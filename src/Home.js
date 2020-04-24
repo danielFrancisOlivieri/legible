@@ -80,10 +80,20 @@ export class Home extends React.Component {
           }
     }
 
+  
+
       addWord = (e) => {
+
+        window.onkeydown = function(e) { 
+            
+            if(e.keyCode === 32) {
+                window.scrollBy(0, 75);    
+            }
+            return !(e.keyCode === 32);
+        };
         
         if(e.keyCode === 16) {
-            window.scrollBy(0, 30);
+            window.scrollBy(0, 150);
         }
 
         if(e.keyCode === 37 ) {
@@ -103,7 +113,7 @@ export class Home extends React.Component {
             if (this.state.fullTextArray.length > this.state.textIndexNumber) {
                 this.setState({textIndexNumber: this.state.textIndexNumber + 1});
                 this.setState({textPresented: returnTextToPresent(this.state.fullTextArray, this.state.textIndexNumber) });
-               window.scrollBy(0, 4);
+               window.scrollBy(0, 5);
               }
         }
 
