@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  text-align: left;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -18,14 +19,38 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  height: 3000vh;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.displayText {
+  color: black;
+}
+
+.container {
+  margin-top: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: normal;
+}
+
+.home {
+  margin-bottom: 300px;
+}
+
+h1 {
+  cursor: pointer;
+}
+
+.title {
+  color: white;
+  align-self: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 4em;
 }
 
 @keyframes App-logo-spin {
