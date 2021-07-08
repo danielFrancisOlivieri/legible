@@ -32,7 +32,7 @@ It is the phenomenon sometimes called alienation from self. In its advanced stag
 `
 
 
-let title = 'Title';
+let title = 'Tunnel';
 let textIndexNumber = 2; // holds your place, manipulating it changes how much is presented
 let fullText = newText;
 let fullTextArray = fullText.split(' ');
@@ -54,7 +54,7 @@ export class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: 'Title',
+            title: 'Tunnels',
             fullText: newText,
             textIndexNumber: 2,
             fullTextArray: fullText.split(' '),
